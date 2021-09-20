@@ -51,7 +51,7 @@ export const elementOrEmpty = (element) => {
   (typeof element === 'undefined' || element === null) ? '' : element;
 };
 
-export const joiner = ((data, separator = ',', enclosingCharacter = '"') => {
+export const joiner = ((data, separator = ',', enclosingCharacter = '') => {
   return data
     .filter(e => e)
     .map(
